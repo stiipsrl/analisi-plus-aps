@@ -1,0 +1,1120 @@
+<div class="space-y-8">
+    <!-- Intro Section -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <div class="border-l-4 border-yellow-400 pl-4 mb-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Demo MVP - Nuovo Gestionale Plus APS</h2>
+            <p class="text-gray-600">
+                Di seguito sono presentati i mockup interattivi delle principali schermate del nuovo gestionale sanitario.
+                Questi mockup rappresentano la visione del nuovo sistema con interfaccia moderna, UX ottimizzata
+                e tutte le nuove funzionalità richieste. I design sono indicativi e verranno raffinati durante lo sviluppo
+                in collaborazione con il team Plus APS.
+            </p>
+        </div>
+
+        <!-- Legend -->
+        <div class="flex flex-wrap gap-4 text-sm">
+            <div class="flex items-center">
+                <span class="w-3 h-3 rounded-full bg-green-500 mr-2"></span>
+                <span class="text-gray-600">Funzionalità esistente migliorata</span>
+            </div>
+            <div class="flex items-center">
+                <span class="w-3 h-3 rounded-full bg-yellow-500 mr-2"></span>
+                <span class="text-gray-600">Nuova funzionalità</span>
+            </div>
+            <div class="flex items-center">
+                <span class="w-3 h-3 rounded-full bg-blue-500 mr-2"></span>
+                <span class="text-gray-600">Automazione</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mockup Navigation -->
+    <div class="bg-white rounded-xl shadow-md p-4">
+        <div class="flex flex-wrap gap-2">
+            <button onclick="showMockup('login', this)" class="mockup-tab active px-4 py-2 rounded-lg text-sm font-medium transition-all bg-yellow-400 text-gray-900">
+                Login
+            </button>
+            <button onclick="showMockup('dashboard', this)" class="mockup-tab px-4 py-2 rounded-lg text-sm font-medium transition-all bg-gray-100 text-gray-600 hover:bg-gray-200">
+                Dashboard
+            </button>
+            <button onclick="showMockup('paziente', this)" class="mockup-tab px-4 py-2 rounded-lg text-sm font-medium transition-all bg-gray-100 text-gray-600 hover:bg-gray-200">
+                Scheda Paziente
+            </button>
+            <button onclick="showMockup('prenotazioni', this)" class="mockup-tab px-4 py-2 rounded-lg text-sm font-medium transition-all bg-gray-100 text-gray-600 hover:bg-gray-200">
+                Prenotazioni
+            </button>
+            <button onclick="showMockup('questionari', this)" class="mockup-tab px-4 py-2 rounded-lg text-sm font-medium transition-all bg-gray-100 text-gray-600 hover:bg-gray-200">
+                Questionari
+            </button>
+            <button onclick="showMockup('notifiche', this)" class="mockup-tab px-4 py-2 rounded-lg text-sm font-medium transition-all bg-gray-100 text-gray-600 hover:bg-gray-200">
+                Notifiche
+            </button>
+        </div>
+    </div>
+
+    <!-- Mockup Container -->
+    <div id="mockup-container">
+
+        <!-- LOGIN MOCKUP -->
+        <div id="mockup-login" class="mockup-content">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="bg-gradient-to-r from-blue-600 to-blue-800 p-4">
+                    <h3 class="text-white font-semibold flex items-center">
+                        <span class="material-icons-outlined mr-2">login</span>
+                        Nuova Pagina di Login
+                    </h3>
+                </div>
+
+                <!-- Login Mockup Content -->
+                <div class="p-8 bg-gradient-to-br from-gray-50 to-gray-100">
+                    <div class="max-w-md mx-auto">
+                        <!-- Login Card -->
+                        <div class="bg-white rounded-2xl shadow-xl p-8">
+                            <!-- Logo -->
+                            <div class="text-center mb-8">
+                                <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl mx-auto flex items-center justify-center mb-4 shadow-lg">
+                                    <span class="text-white text-2xl font-bold">P+</span>
+                                </div>
+                                <h2 class="text-2xl font-bold text-gray-800">Plus APS</h2>
+                                <p class="text-gray-500 text-sm">Gestionale Sanitario</p>
+                            </div>
+
+                            <!-- Form -->
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Username</label>
+                                    <div class="relative">
+                                        <span class="absolute inset-y-0 left-3 flex items-center text-gray-400 pointer-events-none">
+                                            <span class="material-icons-outlined text-xl">person</span>
+                                        </span>
+                                        <input type="text" placeholder="Inserisci username"
+                                            class="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                                    <div class="relative">
+                                        <span class="absolute inset-y-0 left-3 flex items-center text-gray-400 pointer-events-none">
+                                            <span class="material-icons-outlined text-xl">lock</span>
+                                        </span>
+                                        <input type="password" placeholder="Inserisci password"
+                                            class="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center justify-between">
+                                    <a href="#" class="text-sm text-blue-600 hover:underline">Password dimenticata?</a>
+                                </div>
+
+                                <button class="w-full py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl font-medium hover:from-blue-700 hover:to-blue-800 transition-all shadow-lg">
+                                    Accedi
+                                </button>
+                            </div>
+
+                            <!-- Footer -->
+                            <div class="mt-6 pt-6 border-t border-gray-100 text-center">
+                                <p class="text-xs text-gray-400">Accesso riservato agli operatori autorizzati</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features List -->
+                <div class="p-4 bg-gray-50 border-t">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                        <div class="flex items-center text-green-600">
+                            <span class="material-icons-outlined text-sm mr-1">check_circle</span>
+                            Design moderno
+                        </div>
+
+                        <div class="flex items-center text-yellow-600">
+                            <span class="material-icons-outlined text-sm mr-1">add_circle</span>
+                            Recupero password
+                        </div>
+                        <div class="flex items-center text-green-600">
+                            <span class="material-icons-outlined text-sm mr-1">check_circle</span>
+                            Feedback errori
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DASHBOARD MOCKUP -->
+        <div id="mockup-dashboard" class="mockup-content hidden">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="bg-gradient-to-r from-blue-600 to-blue-800 p-4">
+                    <h3 class="text-white font-semibold flex items-center">
+                        <span class="material-icons-outlined mr-2">dashboard</span>
+                        Dashboard Principale
+                    </h3>
+                </div>
+
+                <!-- Dashboard Mockup -->
+                <div class="bg-gray-100">
+                    <!-- Top Navigation -->
+                    <div class="bg-white border-b px-6 py-3 flex items-center justify-between">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center">
+                                <span class="text-white font-bold">P+</span>
+                            </div>
+                            <nav class="flex space-x-1">
+                                <a href="#" class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg font-medium text-sm">Dashboard</a>
+                                <a href="#" class="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg text-sm">Pazienti</a>
+                                <a href="#" class="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg text-sm">Appuntamenti</a>
+                                <a href="#" class="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg text-sm">Questionari</a>
+                                <a href="#" class="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg text-sm">Report</a>
+                            </nav>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <!-- Search -->
+                            <div class="relative">
+                                <input type="text" placeholder="Cerca paziente (Ctrl+K)"
+                                    class="pl-10 pr-4 py-2 w-64 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-blue-500">
+                                <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+                                    <span class="material-icons-outlined text-xl">search</span>
+                                </span>
+                            </div>
+                            <!-- Notifications -->
+                            <button class="relative p-2 text-gray-500 hover:bg-gray-100 rounded-lg">
+                                <span class="material-icons-outlined">notifications</span>
+                                <span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+                            </button>
+                            <!-- User -->
+                            <div class="flex items-center space-x-2">
+                                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <span class="text-blue-600 text-sm font-medium">MR</span>
+                                </div>
+                                <span class="text-sm font-medium text-gray-700">Mario Rossi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dashboard Content -->
+                    <div class="p-6">
+                        <!-- KPI Cards -->
+                        <div class="grid grid-cols-4 gap-4 mb-6">
+                            <div class="bg-white rounded-xl p-4 shadow-sm">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-gray-500 text-sm">Pazienti Totali</span>
+                                    <span class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
+                                        <span class="material-icons-outlined text-blue-600 text-sm">people</span>
+                                    </span>
+                                </div>
+                                <div class="text-2xl font-bold text-gray-800">9.431</div>
+                                <div class="text-xs text-green-600 flex items-center mt-1">
+                                    <span class="material-icons-outlined text-xs">trending_up</span>
+                                    +127 questo mese
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-xl p-4 shadow-sm">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-gray-500 text-sm">Incontri Totali</span>
+                                    <span class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
+                                        <span class="material-icons-outlined text-green-600 text-sm">event</span>
+                                    </span>
+                                </div>
+                                <div class="text-2xl font-bold text-gray-800">50.840</div>
+                                <div class="text-xs text-green-600 flex items-center mt-1">
+                                    <span class="material-icons-outlined text-xs">trending_up</span>
+                                    +342 questo mese
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-xl p-4 shadow-sm">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-gray-500 text-sm">Appuntamenti Oggi</span>
+                                    <span class="w-8 h-8 bg-yellow-100 rounded-lg flex items-center justify-center">
+                                        <span class="material-icons-outlined text-yellow-600 text-sm">schedule</span>
+                                    </span>
+                                </div>
+                                <div class="text-2xl font-bold text-gray-800">18</div>
+                                <div class="text-xs text-gray-500 flex items-center mt-1">
+                                    3 in attesa di conferma
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-xl p-4 shadow-sm">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-gray-500 text-sm">Questionari da Revisionare</span>
+                                    <span class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
+                                        <span class="material-icons-outlined text-purple-600 text-sm">assignment</span>
+                                    </span>
+                                </div>
+                                <div class="text-2xl font-bold text-gray-800">7</div>
+                                <div class="text-xs text-orange-600 flex items-center mt-1">
+                                    <span class="material-icons-outlined text-xs">priority_high</span>
+                                    Richiede attenzione
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Main Content Grid -->
+                        <div class="grid grid-cols-3 gap-6">
+                            <!-- Recent Activity -->
+                            <div class="col-span-2 bg-white rounded-xl shadow-sm p-4">
+                                <div class="flex items-center justify-between mb-4">
+                                    <h4 class="font-semibold text-gray-800">Attività Recenti</h4>
+                                    <a href="#" class="text-blue-600 text-sm hover:underline">Vedi tutto</a>
+                                </div>
+                                <div class="space-y-3">
+                                    <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                                            <span class="material-icons-outlined text-green-600 text-sm">check</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <p class="text-sm font-medium text-gray-800">Test HIV completato - RO-MA-01/05/1990-M</p>
+                                            <p class="text-xs text-gray-500">Esito: Negativo - 10 minuti fa</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                                            <span class="material-icons-outlined text-blue-600 text-sm">event</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <p class="text-sm font-medium text-gray-800">Nuovo appuntamento prenotato</p>
+                                            <p class="text-xs text-gray-500">BI-LU-15/03/1985-F - Domani ore 10:30</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                        <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-3">
+                                            <span class="material-icons-outlined text-purple-600 text-sm">assignment</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <p class="text-sm font-medium text-gray-800">Questionario completato</p>
+                                            <p class="text-xs text-gray-500">VE-GI-22/08/1992-M - In attesa di revisione</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Quick Actions -->
+                            <div class="bg-white rounded-xl shadow-sm p-4">
+                                <h4 class="font-semibold text-gray-800 mb-4">Azioni Rapide</h4>
+                                <div class="space-y-2">
+                                    <button class="w-full flex items-center p-3 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 transition-colors">
+                                        <span class="material-icons-outlined mr-2">person_add</span>
+                                        <span class="text-sm font-medium">Nuovo Paziente</span>
+                                    </button>
+                                    <button class="w-full flex items-center p-3 bg-green-50 text-green-700 rounded-lg hover:bg-green-100 transition-colors">
+                                        <span class="material-icons-outlined mr-2">event</span>
+                                        <span class="text-sm font-medium">Prenota Appuntamento</span>
+                                    </button>
+                                    <button class="w-full flex items-center p-3 bg-purple-50 text-purple-700 rounded-lg hover:bg-purple-100 transition-colors">
+                                        <span class="material-icons-outlined mr-2">biotech</span>
+                                        <span class="text-sm font-medium">Registra Test</span>
+                                    </button>
+                                    <button class="w-full flex items-center p-3 bg-orange-50 text-orange-700 rounded-lg hover:bg-orange-100 transition-colors">
+                                        <span class="material-icons-outlined mr-2">vaccines</span>
+                                        <span class="text-sm font-medium">Registra Vaccino</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features -->
+                <div class="p-4 bg-gray-50 border-t">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                        <div class="flex items-center text-yellow-600">
+                            <span class="material-icons-outlined text-sm mr-1">add_circle</span>
+                            KPI Dashboard
+                        </div>
+                        <div class="flex items-center text-yellow-600">
+                            <span class="material-icons-outlined text-sm mr-1">add_circle</span>
+                            Ricerca globale
+                        </div>
+                        <div class="flex items-center text-yellow-600">
+                            <span class="material-icons-outlined text-sm mr-1">add_circle</span>
+                            Quick actions
+                        </div>
+                        <div class="flex items-center text-green-600">
+                            <span class="material-icons-outlined text-sm mr-1">check_circle</span>
+                            Navigazione moderna
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCHEDA PAZIENTE MOCKUP -->
+        <div id="mockup-paziente" class="mockup-content hidden">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="bg-gradient-to-r from-blue-600 to-blue-800 p-4">
+                    <h3 class="text-white font-semibold flex items-center">
+                        <span class="material-icons-outlined mr-2">person</span>
+                        Scheda Paziente
+                    </h3>
+                </div>
+
+                <!-- Patient Card Mockup -->
+                <div class="bg-gray-100 p-6">
+                    <!-- Patient Header -->
+                    <div class="bg-white rounded-xl shadow-sm p-4 mb-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center mr-4">
+                                    <span class="text-white text-xl font-bold">RM</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800">RO-MA-01/05/1990-M</h3>
+                                    <p class="text-gray-500">Maschio, 34 anni - Bologna</p>
+                                    <div class="flex items-center mt-1 space-x-2">
+                                        <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">Privacy OK</span>
+                                        <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">SMS Attivo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex space-x-2">
+                                <button class="p-2 text-gray-500 hover:bg-gray-100 rounded-lg">
+                                    <span class="material-icons-outlined">print</span>
+                                </button>
+                                <button class="p-2 text-gray-500 hover:bg-gray-100 rounded-lg">
+                                    <span class="material-icons-outlined">edit</span>
+                                </button>
+                                <button class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700">
+                                    <span class="material-icons-outlined text-sm mr-1">event</span>
+                                    Prenota
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tabs -->
+                    <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                        <div class="border-b px-4">
+                            <nav class="flex space-x-4">
+                                <button class="px-4 py-3 text-blue-600 border-b-2 border-blue-600 font-medium text-sm">
+                                    <span class="material-icons-outlined text-sm mr-1 align-middle">biotech</span>
+                                    Test
+                                </button>
+                                <button class="px-4 py-3 text-gray-500 hover:text-gray-700 text-sm">
+                                    <span class="material-icons-outlined text-sm mr-1 align-middle">vaccines</span>
+                                    Vaccini
+                                </button>
+                                <button class="px-4 py-3 text-gray-500 hover:text-gray-700 text-sm">
+                                    <span class="material-icons-outlined text-sm mr-1 align-middle">info</span>
+                                    Informazioni
+                                </button>
+                                <button class="px-4 py-3 text-gray-500 hover:text-gray-700 text-sm">
+                                    <span class="material-icons-outlined text-sm mr-1 align-middle">shield</span>
+                                    Privacy
+                                </button>
+                                <button class="px-4 py-3 text-gray-500 hover:text-gray-700 text-sm">
+                                    <span class="material-icons-outlined text-sm mr-1 align-middle">assignment</span>
+                                    Questionari
+                                </button>
+                                <button class="px-4 py-3 text-gray-500 hover:text-gray-700 text-sm">
+                                    <span class="material-icons-outlined text-sm mr-1 align-middle">history</span>
+                                    Storico
+                                </button>
+                            </nav>
+                        </div>
+
+                        <!-- Tab Content -->
+                        <div class="p-4">
+                            <!-- Add Test Button -->
+                            <div class="flex justify-between items-center mb-4">
+                                <h4 class="font-semibold text-gray-800">Test Diagnostici</h4>
+                                <button class="px-4 py-2 bg-green-600 text-white rounded-lg text-sm font-medium hover:bg-green-700 flex items-center">
+                                    <span class="material-icons-outlined text-sm mr-1">add</span>
+                                    Nuovo Test
+                                </button>
+                            </div>
+
+                            <!-- Tests Table -->
+                            <div class="overflow-x-auto">
+                                <table class="w-full">
+                                    <thead class="bg-gray-50">
+                                        <tr>
+                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Data</th>
+                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Tipo Test</th>
+                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Operatore</th>
+                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Esito</th>
+                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Richiamo</th>
+                                            <th class="px-4 py-3 text-right text-xs font-medium text-gray-500 uppercase">Azioni</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-gray-200">
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="px-4 py-3 text-sm text-gray-800">10/12/2024</td>
+                                            <td class="px-4 py-3 text-sm text-gray-800">HIV Ab/Ag</td>
+                                            <td class="px-4 py-3 text-sm text-gray-600">Dr. Bianchi</td>
+                                            <td class="px-4 py-3">
+                                                <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">Negativo</span>
+                                            </td>
+                                            <td class="px-4 py-3 text-sm text-gray-600">-</td>
+                                            <td class="px-4 py-3 text-right">
+                                                <button class="p-1 text-gray-400 hover:text-blue-600"><span class="material-icons-outlined text-sm">visibility</span></button>
+                                                <button class="p-1 text-gray-400 hover:text-blue-600"><span class="material-icons-outlined text-sm">edit</span></button>
+                                                <button class="p-1 text-gray-400 hover:text-blue-600"><span class="material-icons-outlined text-sm">print</span></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="px-4 py-3 text-sm text-gray-800">15/09/2024</td>
+                                            <td class="px-4 py-3 text-sm text-gray-800">Sifilide</td>
+                                            <td class="px-4 py-3 text-sm text-gray-600">Dr. Verdi</td>
+                                            <td class="px-4 py-3">
+                                                <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">Negativo</span>
+                                            </td>
+                                            <td class="px-4 py-3 text-sm text-gray-600">-</td>
+                                            <td class="px-4 py-3 text-right">
+                                                <button class="p-1 text-gray-400 hover:text-blue-600"><span class="material-icons-outlined text-sm">visibility</span></button>
+                                                <button class="p-1 text-gray-400 hover:text-blue-600"><span class="material-icons-outlined text-sm">edit</span></button>
+                                                <button class="p-1 text-gray-400 hover:text-blue-600"><span class="material-icons-outlined text-sm">print</span></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50 bg-yellow-50">
+                                            <td class="px-4 py-3 text-sm text-gray-800">01/06/2024</td>
+                                            <td class="px-4 py-3 text-sm text-gray-800">HCV Ab</td>
+                                            <td class="px-4 py-3 text-sm text-gray-600">Dr. Bianchi</td>
+                                            <td class="px-4 py-3">
+                                                <span class="px-2 py-1 bg-yellow-100 text-yellow-700 text-xs rounded-full">In attesa</span>
+                                            </td>
+                                            <td class="px-4 py-3">
+                                                <span class="px-2 py-1 bg-orange-100 text-orange-700 text-xs rounded-full flex items-center w-fit">
+                                                    <span class="material-icons-outlined text-xs mr-1">schedule</span>
+                                                    15/12/2024
+                                                </span>
+                                            </td>
+                                            <td class="px-4 py-3 text-right">
+                                                <button class="p-1 text-gray-400 hover:text-blue-600"><span class="material-icons-outlined text-sm">visibility</span></button>
+                                                <button class="p-1 text-gray-400 hover:text-blue-600"><span class="material-icons-outlined text-sm">edit</span></button>
+                                                <button class="p-1 text-gray-400 hover:text-blue-600"><span class="material-icons-outlined text-sm">print</span></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Pagination -->
+                            <div class="flex items-center justify-between mt-4 pt-4 border-t">
+                                <span class="text-sm text-gray-500">Showing 1-3 of 12 results</span>
+                                <div class="flex space-x-1">
+                                    <button class="px-3 py-1 border rounded text-sm text-gray-500 hover:bg-gray-50">Prev</button>
+                                    <button class="px-3 py-1 bg-blue-600 text-white rounded text-sm">1</button>
+                                    <button class="px-3 py-1 border rounded text-sm text-gray-500 hover:bg-gray-50">2</button>
+                                    <button class="px-3 py-1 border rounded text-sm text-gray-500 hover:bg-gray-50">3</button>
+                                    <button class="px-3 py-1 border rounded text-sm text-gray-500 hover:bg-gray-50">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features -->
+                <div class="p-4 bg-gray-50 border-t">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                        <div class="flex items-center text-green-600">
+                            <span class="material-icons-outlined text-sm mr-1">check_circle</span>
+                            Tab moderni con icone
+                        </div>
+                        <div class="flex items-center text-yellow-600">
+                            <span class="material-icons-outlined text-sm mr-1">add_circle</span>
+                            Stampa scheda
+                        </div>
+                        <div class="flex items-center text-yellow-600">
+                            <span class="material-icons-outlined text-sm mr-1">add_circle</span>
+                            Paginazione tabelle
+                        </div>
+                        <div class="flex items-center text-yellow-600">
+                            <span class="material-icons-outlined text-sm mr-1">add_circle</span>
+                            Alert richiami
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRENOTAZIONI MOCKUP -->
+        <div id="mockup-prenotazioni" class="mockup-content hidden">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="bg-gradient-to-r from-blue-600 to-blue-800 p-4">
+                    <h3 class="text-white font-semibold flex items-center">
+                        <span class="material-icons-outlined mr-2">event</span>
+                        Sistema Prenotazioni
+                        <span class="ml-2 px-2 py-1 bg-yellow-400 text-gray-900 text-xs rounded-full">NUOVO</span>
+                    </h3>
+                </div>
+
+                <!-- Booking System Mockup -->
+                <div class="bg-gray-100 p-6">
+                    <div class="grid grid-cols-3 gap-6">
+                        <!-- Calendar -->
+                        <div class="col-span-2 bg-white rounded-xl shadow-sm p-4">
+                            <div class="flex items-center justify-between mb-4">
+                                <h4 class="font-semibold text-gray-800">Dicembre 2024</h4>
+                                <div class="flex space-x-2">
+                                    <button class="p-2 hover:bg-gray-100 rounded-lg">
+                                        <span class="material-icons-outlined text-gray-500">chevron_left</span>
+                                    </button>
+                                    <button class="p-2 hover:bg-gray-100 rounded-lg">
+                                        <span class="material-icons-outlined text-gray-500">chevron_right</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Calendar Grid -->
+                            <div class="grid grid-cols-7 gap-1 text-center mb-2">
+                                <div class="text-xs font-medium text-gray-500 py-2">Lun</div>
+                                <div class="text-xs font-medium text-gray-500 py-2">Mar</div>
+                                <div class="text-xs font-medium text-gray-500 py-2">Mer</div>
+                                <div class="text-xs font-medium text-gray-500 py-2">Gio</div>
+                                <div class="text-xs font-medium text-gray-500 py-2">Ven</div>
+                                <div class="text-xs font-medium text-gray-500 py-2">Sab</div>
+                                <div class="text-xs font-medium text-gray-500 py-2">Dom</div>
+                            </div>
+                            <div class="grid grid-cols-7 gap-1">
+                                <div class="text-gray-300 p-2 text-sm text-center">25</div>
+                                <div class="text-gray-300 p-2 text-sm text-center">26</div>
+                                <div class="text-gray-300 p-2 text-sm text-center">27</div>
+                                <div class="text-gray-300 p-2 text-sm text-center">28</div>
+                                <div class="text-gray-300 p-2 text-sm text-center">29</div>
+                                <div class="text-gray-300 p-2 text-sm text-center">30</div>
+                                <div class="p-2 text-sm text-center rounded-lg hover:bg-gray-100 cursor-pointer">1</div>
+                                <div class="p-2 text-sm text-center rounded-lg hover:bg-gray-100 cursor-pointer">2</div>
+                                <div class="p-2 text-sm text-center rounded-lg hover:bg-gray-100 cursor-pointer">3</div>
+                                <div class="p-2 text-sm text-center rounded-lg hover:bg-gray-100 cursor-pointer">4</div>
+                                <div class="p-2 text-sm text-center rounded-lg hover:bg-gray-100 cursor-pointer">5</div>
+                                <div class="p-2 text-sm text-center rounded-lg hover:bg-gray-100 cursor-pointer">6</div>
+                                <div class="p-2 text-sm text-center rounded-lg hover:bg-gray-100 cursor-pointer">7</div>
+                                <div class="p-2 text-sm text-center rounded-lg hover:bg-gray-100 cursor-pointer">8</div>
+                                <div class="p-2 text-sm text-center rounded-lg hover:bg-gray-100 cursor-pointer">9</div>
+                                <div class="p-2 text-sm text-center rounded-lg bg-blue-600 text-white cursor-pointer">10</div>
+                                <div class="p-2 text-sm text-center rounded-lg hover:bg-gray-100 cursor-pointer relative">
+                                    11
+                                    <span class="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 bg-green-500 rounded-full"></span>
+                                </div>
+                                <div class="p-2 text-sm text-center rounded-lg hover:bg-gray-100 cursor-pointer relative">
+                                    12
+                                    <span class="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 bg-green-500 rounded-full"></span>
+                                </div>
+                                <div class="p-2 text-sm text-center rounded-lg hover:bg-gray-100 cursor-pointer">13</div>
+                                <div class="p-2 text-sm text-center rounded-lg hover:bg-gray-100 cursor-pointer">14</div>
+                                <div class="p-2 text-sm text-center rounded-lg hover:bg-gray-100 cursor-pointer">15</div>
+                            </div>
+
+                            <!-- Time Slots for Selected Day -->
+                            <div class="mt-6 pt-4 border-t">
+                                <h5 class="font-medium text-gray-800 mb-3">Slot disponibili - 10 Dicembre 2024</h5>
+                                <div class="grid grid-cols-4 gap-2">
+                                    <button class="p-2 border border-gray-200 rounded-lg text-sm hover:border-blue-500 hover:bg-blue-50 transition-colors">09:00</button>
+                                    <button class="p-2 border border-gray-200 rounded-lg text-sm hover:border-blue-500 hover:bg-blue-50 transition-colors">09:30</button>
+                                    <button class="p-2 bg-gray-100 text-gray-400 rounded-lg text-sm cursor-not-allowed">10:00</button>
+                                    <button class="p-2 border border-blue-500 bg-blue-50 rounded-lg text-sm text-blue-700">10:30</button>
+                                    <button class="p-2 border border-gray-200 rounded-lg text-sm hover:border-blue-500 hover:bg-blue-50 transition-colors">11:00</button>
+                                    <button class="p-2 bg-gray-100 text-gray-400 rounded-lg text-sm cursor-not-allowed">11:30</button>
+                                    <button class="p-2 border border-gray-200 rounded-lg text-sm hover:border-blue-500 hover:bg-blue-50 transition-colors">14:00</button>
+                                    <button class="p-2 border border-gray-200 rounded-lg text-sm hover:border-blue-500 hover:bg-blue-50 transition-colors">14:30</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Booking Panel -->
+                        <div class="space-y-4">
+                            <!-- Selected Appointment -->
+                            <div class="bg-white rounded-xl shadow-sm p-4">
+                                <h4 class="font-semibold text-gray-800 mb-4">Nuova Prenotazione</h4>
+                                <div class="space-y-3">
+                                    <div class="p-3 bg-blue-50 rounded-lg">
+                                        <div class="flex items-center text-blue-700 mb-1">
+                                            <span class="material-icons-outlined text-sm mr-2">event</span>
+                                            <span class="font-medium">10 Dicembre 2024</span>
+                                        </div>
+                                        <div class="flex items-center text-blue-700">
+                                            <span class="material-icons-outlined text-sm mr-2">schedule</span>
+                                            <span class="font-medium">10:30</span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-1">Paziente</label>
+                                        <input type="text" value="RO-MA-01/05/1990-M"
+                                            class="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm">
+                                    </div>
+
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-1">Tipo visita</label>
+                                        <select class="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm">
+                                            <option>Test HIV</option>
+                                            <option>Consulenza PrEP</option>
+                                            <option>Screening IST</option>
+                                            <option>Vaccinazione</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-1">Note</label>
+                                        <textarea class="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm" rows="2" placeholder="Note opzionali..."></textarea>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <input type="checkbox" class="w-4 h-4 text-blue-600 rounded" checked>
+                                        <label class="ml-2 text-sm text-gray-600">Invia promemoria SMS</label>
+                                    </div>
+
+                                    <button class="w-full py-2 bg-green-600 text-white rounded-lg text-sm font-medium hover:bg-green-700">
+                                        Conferma Prenotazione
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Today's Appointments -->
+                            <div class="bg-white rounded-xl shadow-sm p-4">
+                                <h4 class="font-semibold text-gray-800 mb-3">Appuntamenti Oggi</h4>
+                                <div class="space-y-2">
+                                    <div class="flex items-center p-2 bg-green-50 rounded-lg">
+                                        <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                                        <div class="flex-1">
+                                            <p class="text-sm font-medium">09:00 - BI-LU-15/03/1985-F</p>
+                                            <p class="text-xs text-gray-500">Test HIV - Completato</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center p-2 bg-blue-50 rounded-lg">
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
+                                        <div class="flex-1">
+                                            <p class="text-sm font-medium">10:00 - VE-GI-22/08/1992-M</p>
+                                            <p class="text-xs text-gray-500">Consulenza PrEP - In corso</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center p-2 bg-gray-50 rounded-lg">
+                                        <div class="w-2 h-2 bg-gray-400 rounded-full mr-2"></div>
+                                        <div class="flex-1">
+                                            <p class="text-sm font-medium">11:30 - MA-PA-10/11/1988-M</p>
+                                            <p class="text-xs text-gray-500">Screening IST - In attesa</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features -->
+                <div class="p-4 bg-gray-50 border-t">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                        <div class="flex items-center text-yellow-600">
+                            <span class="material-icons-outlined text-sm mr-1">add_circle</span>
+                            Calendario interattivo
+                        </div>
+                        <div class="flex items-center text-yellow-600">
+                            <span class="material-icons-outlined text-sm mr-1">add_circle</span>
+                            Slot temporali
+                        </div>
+                        <div class="flex items-center text-blue-600">
+                            <span class="material-icons-outlined text-sm mr-1">bolt</span>
+                            Promemoria automatico
+                        </div>
+                        <div class="flex items-center text-yellow-600">
+                            <span class="material-icons-outlined text-sm mr-1">add_circle</span>
+                            Disdetta online
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUESTIONARI MOCKUP -->
+        <div id="mockup-questionari" class="mockup-content hidden">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="bg-gradient-to-r from-blue-600 to-blue-800 p-4">
+                    <h3 class="text-white font-semibold flex items-center">
+                        <span class="material-icons-outlined mr-2">assignment</span>
+                        Gestione Questionari
+                    </h3>
+                </div>
+
+                <!-- Questionnaire Mockup -->
+                <div class="bg-gray-100 p-6">
+                    <div class="grid grid-cols-3 gap-6">
+                        <!-- Questionnaire List -->
+                        <div class="col-span-2 bg-white rounded-xl shadow-sm">
+                            <div class="p-4 border-b flex items-center justify-between">
+                                <h4 class="font-semibold text-gray-800">Questionari Attivi</h4>
+                                <button class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 flex items-center">
+                                    <span class="material-icons-outlined text-sm mr-1">add</span>
+                                    Nuovo Questionario
+                                </button>
+                            </div>
+                            <div class="divide-y">
+                                <div class="p-4 hover:bg-gray-50 flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
+                                            <span class="material-icons-outlined text-purple-600">quiz</span>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-medium text-gray-800">Questionario PrEP Point 2024</h5>
+                                            <p class="text-sm text-gray-500">15 domande - IT, EN, ES, PT</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-4">
+                                        <div class="text-right">
+                                            <p class="text-sm font-medium text-gray-800">127 compilazioni</p>
+                                            <p class="text-xs text-gray-500">5 da revisionare</p>
+                                        </div>
+                                        <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">Attivo</span>
+                                        <div class="flex space-x-1">
+                                            <button class="p-2 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded">
+                                                <span class="material-icons-outlined text-sm">edit</span>
+                                            </button>
+                                            <button class="p-2 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded">
+                                                <span class="material-icons-outlined text-sm">content_copy</span>
+                                            </button>
+                                            <button class="p-2 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded">
+                                                <span class="material-icons-outlined text-sm">download</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 hover:bg-gray-50 flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                                            <span class="material-icons-outlined text-blue-600">quiz</span>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-medium text-gray-800">BLQ Checkpoint Assessment</h5>
+                                            <p class="text-sm text-gray-500">22 domande - IT, EN</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-4">
+                                        <div class="text-right">
+                                            <p class="text-sm font-medium text-gray-800">89 compilazioni</p>
+                                            <p class="text-xs text-gray-500">2 da revisionare</p>
+                                        </div>
+                                        <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">Attivo</span>
+                                        <div class="flex space-x-1">
+                                            <button class="p-2 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded">
+                                                <span class="material-icons-outlined text-sm">edit</span>
+                                            </button>
+                                            <button class="p-2 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded">
+                                                <span class="material-icons-outlined text-sm">content_copy</span>
+                                            </button>
+                                            <button class="p-2 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded">
+                                                <span class="material-icons-outlined text-sm">download</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 hover:bg-gray-50 flex items-center justify-between bg-yellow-50">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center mr-3">
+                                            <span class="material-icons-outlined text-yellow-600">quiz</span>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-medium text-gray-800">Follow-up TelePrEP</h5>
+                                            <p class="text-sm text-gray-500">8 domande - IT</p>
+                                            <p class="text-xs text-yellow-600 flex items-center mt-1">
+                                                <span class="material-icons-outlined text-xs mr-1">edit</span>
+                                                Gestione mista attiva
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-4">
+                                        <div class="text-right">
+                                            <p class="text-sm font-medium text-gray-800">34 compilazioni</p>
+                                            <p class="text-xs text-orange-600">12 in bozza</p>
+                                        </div>
+                                        <span class="px-2 py-1 bg-yellow-100 text-yellow-700 text-xs rounded-full">Misto</span>
+                                        <div class="flex space-x-1">
+                                            <button class="p-2 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded">
+                                                <span class="material-icons-outlined text-sm">edit</span>
+                                            </button>
+                                            <button class="p-2 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded">
+                                                <span class="material-icons-outlined text-sm">content_copy</span>
+                                            </button>
+                                            <button class="p-2 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded">
+                                                <span class="material-icons-outlined text-sm">download</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Panel -->
+                        <div class="space-y-4">
+                            <!-- Stats -->
+                            <div class="bg-white rounded-xl shadow-sm p-4">
+                                <h4 class="font-semibold text-gray-800 mb-4">Statistiche</h4>
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-gray-600">Totale compilazioni</span>
+                                        <span class="font-semibold text-gray-800">250</span>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-gray-600">Da revisionare</span>
+                                        <span class="font-semibold text-orange-600">7</span>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-gray-600">Bozze in corso</span>
+                                        <span class="font-semibold text-yellow-600">12</span>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-gray-600">Questo mese</span>
+                                        <span class="font-semibold text-green-600">+45</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Da Revisionare -->
+                            <div class="bg-white rounded-xl shadow-sm p-4">
+                                <h4 class="font-semibold text-gray-800 mb-3">Da Revisionare</h4>
+                                <div class="space-y-2">
+                                    <div class="p-2 bg-orange-50 rounded-lg flex items-center justify-between">
+                                        <div>
+                                            <p class="text-sm font-medium text-gray-800">RO-MA-01/05/1990-M</p>
+                                            <p class="text-xs text-gray-500">PrEP Point - 2h fa</p>
+                                        </div>
+                                        <button class="p-1 text-orange-600 hover:bg-orange-100 rounded">
+                                            <span class="material-icons-outlined text-sm">visibility</span>
+                                        </button>
+                                    </div>
+                                    <div class="p-2 bg-orange-50 rounded-lg flex items-center justify-between">
+                                        <div>
+                                            <p class="text-sm font-medium text-gray-800">BI-LU-15/03/1985-F</p>
+                                            <p class="text-xs text-gray-500">BLQ Checkpoint - 5h fa</p>
+                                        </div>
+                                        <button class="p-1 text-orange-600 hover:bg-orange-100 rounded">
+                                            <span class="material-icons-outlined text-sm">visibility</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <a href="#" class="block text-center text-sm text-blue-600 hover:underline mt-3">Vedi tutti (7)</a>
+                            </div>
+
+                            <!-- Quick Export -->
+                            <div class="bg-white rounded-xl shadow-sm p-4">
+                                <h4 class="font-semibold text-gray-800 mb-3">Export Rapido</h4>
+                                <div class="space-y-2">
+                                    <button class="w-full flex items-center justify-center p-2 border border-gray-200 rounded-lg text-sm hover:bg-gray-50">
+                                        <span class="material-icons-outlined text-sm mr-2 text-green-600">table_chart</span>
+                                        Export Excel
+                                    </button>
+                                    <button class="w-full flex items-center justify-center p-2 border border-gray-200 rounded-lg text-sm hover:bg-gray-50">
+                                        <span class="material-icons-outlined text-sm mr-2 text-red-600">picture_as_pdf</span>
+                                        Export PDF
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features -->
+                <div class="p-4 bg-gray-50 border-t">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                        <div class="flex items-center text-yellow-600">
+                            <span class="material-icons-outlined text-sm mr-1">add_circle</span>
+                            Gestione mista
+                        </div>
+                        <div class="flex items-center text-yellow-600">
+                            <span class="material-icons-outlined text-sm mr-1">add_circle</span>
+                            Duplicazione rapida
+                        </div>
+                        <div class="flex items-center text-yellow-600">
+                            <span class="material-icons-outlined text-sm mr-1">add_circle</span>
+                            Bozze automatiche
+                        </div>
+                        <div class="flex items-center text-green-600">
+                            <span class="material-icons-outlined text-sm mr-1">check_circle</span>
+                            Export multi-formato
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NOTIFICHE MOCKUP -->
+        <div id="mockup-notifiche" class="mockup-content hidden">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="bg-gradient-to-r from-blue-600 to-blue-800 p-4">
+                    <h3 class="text-white font-semibold flex items-center">
+                        <span class="material-icons-outlined mr-2">notifications</span>
+                        Sistema Notifiche Automatiche
+                        <span class="ml-2 px-2 py-1 bg-yellow-400 text-gray-900 text-xs rounded-full">NUOVO</span>
+                    </h3>
+                </div>
+
+                <!-- Notifications Mockup -->
+                <div class="bg-gray-100 p-6">
+                    <div class="grid grid-cols-2 gap-6">
+                        <!-- Notification Settings -->
+                        <div class="bg-white rounded-xl shadow-sm p-4">
+                            <h4 class="font-semibold text-gray-800 mb-4">Configurazione Notifiche</h4>
+
+                            <div class="space-y-4">
+                                <!-- Promemoria Appuntamento -->
+                                <div class="p-4 bg-gray-50 rounded-lg">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="flex items-center">
+                                            <span class="material-icons-outlined text-blue-600 mr-2">event</span>
+                                            <span class="font-medium text-gray-800">Promemoria Appuntamento</span>
+                                        </div>
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" checked>
+                                            <span class="toggle-slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="flex items-center space-x-2 text-sm">
+                                        <label class="flex items-center">
+                                            <input type="checkbox" checked class="w-4 h-4 text-blue-600 rounded mr-1">
+                                            24h prima
+                                        </label>
+                                        <label class="flex items-center">
+                                            <input type="checkbox" checked class="w-4 h-4 text-blue-600 rounded mr-1">
+                                            1h prima
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Risultati Test -->
+                                <div class="p-4 bg-gray-50 rounded-lg">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="flex items-center">
+                                            <span class="material-icons-outlined text-green-600 mr-2">biotech</span>
+                                            <span class="font-medium text-gray-800">Risultati Test Disponibili</span>
+                                        </div>
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" checked>
+                                            <span class="toggle-slider"></span>
+                                        </label>
+                                    </div>
+                                    <p class="text-sm text-gray-500">Notifica automatica quando i risultati sono pronti</p>
+                                </div>
+
+                                <!-- Richiami -->
+                                <div class="p-4 bg-gray-50 rounded-lg">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="flex items-center">
+                                            <span class="material-icons-outlined text-orange-600 mr-2">schedule</span>
+                                            <span class="font-medium text-gray-800">Richiami Follow-up</span>
+                                        </div>
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" checked>
+                                            <span class="toggle-slider"></span>
+                                        </label>
+                                    </div>
+                                    <p class="text-sm text-gray-500">Promemoria automatico per visite di controllo</p>
+                                </div>
+
+                                <!-- Scadenza Vaccini -->
+                                <div class="p-4 bg-gray-50 rounded-lg">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="flex items-center">
+                                            <span class="material-icons-outlined text-purple-600 mr-2">vaccines</span>
+                                            <span class="font-medium text-gray-800">Scadenza Vaccinazioni</span>
+                                        </div>
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" checked>
+                                            <span class="toggle-slider"></span>
+                                        </label>
+                                    </div>
+                                    <p class="text-sm text-gray-500">Avviso 30 giorni prima della scadenza</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Notification Log -->
+                        <div class="space-y-4">
+                            <div class="bg-white rounded-xl shadow-sm p-4">
+                                <div class="flex items-center justify-between mb-4">
+                                    <h4 class="font-semibold text-gray-800">Notifiche Inviate Oggi</h4>
+                                    <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">24 inviate</span>
+                                </div>
+                                <div class="space-y-2">
+                                    <div class="flex items-center p-2 bg-green-50 rounded-lg">
+                                        <span class="material-icons-outlined text-green-600 text-sm mr-2">check_circle</span>
+                                        <div class="flex-1">
+                                            <p class="text-sm text-gray-800">SMS Promemoria inviato</p>
+                                            <p class="text-xs text-gray-500">RO-MA-01/05/1990-M - 10:30</p>
+                                        </div>
+                                        <span class="text-xs text-gray-400">2m fa</span>
+                                    </div>
+                                    <div class="flex items-center p-2 bg-green-50 rounded-lg">
+                                        <span class="material-icons-outlined text-green-600 text-sm mr-2">check_circle</span>
+                                        <div class="flex-1">
+                                            <p class="text-sm text-gray-800">Email Risultati inviata</p>
+                                            <p class="text-xs text-gray-500">BI-LU-15/03/1985-F</p>
+                                        </div>
+                                        <span class="text-xs text-gray-400">15m fa</span>
+                                    </div>
+                                    <div class="flex items-center p-2 bg-green-50 rounded-lg">
+                                        <span class="material-icons-outlined text-green-600 text-sm mr-2">check_circle</span>
+                                        <div class="flex-1">
+                                            <p class="text-sm text-gray-800">SMS Richiamo inviato</p>
+                                            <p class="text-xs text-gray-500">VE-GI-22/08/1992-M</p>
+                                        </div>
+                                        <span class="text-xs text-gray-400">1h fa</span>
+                                    </div>
+                                    <div class="flex items-center p-2 bg-red-50 rounded-lg">
+                                        <span class="material-icons-outlined text-red-600 text-sm mr-2">error</span>
+                                        <div class="flex-1">
+                                            <p class="text-sm text-gray-800">SMS fallito</p>
+                                            <p class="text-xs text-gray-500">MA-PA-10/11/1988-M - Numero non valido</p>
+                                        </div>
+                                        <span class="text-xs text-gray-400">2h fa</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Channel Stats -->
+                            <div class="bg-white rounded-xl shadow-sm p-4">
+                                <h4 class="font-semibold text-gray-800 mb-4">Canali di Comunicazione</h4>
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center">
+                                            <span class="material-icons-outlined text-blue-600 mr-2">sms</span>
+                                            <span class="text-sm text-gray-700">SMS</span>
+                                        </div>
+                                        <div class="text-right">
+                                            <span class="text-sm font-medium text-gray-800">18</span>
+                                            <span class="text-xs text-gray-500 ml-1">oggi</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center">
+                                            <span class="material-icons-outlined text-purple-600 mr-2">email</span>
+                                            <span class="text-sm text-gray-700">Email</span>
+                                        </div>
+                                        <div class="text-right">
+                                            <span class="text-sm font-medium text-gray-800">6</span>
+                                            <span class="text-xs text-gray-500 ml-1">oggi</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features -->
+                <div class="p-4 bg-gray-50 border-t">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                        <div class="flex items-center text-blue-600">
+                            <span class="material-icons-outlined text-sm mr-1">bolt</span>
+                            Invio automatico
+                        </div>
+                        <div class="flex items-center text-blue-600">
+                            <span class="material-icons-outlined text-sm mr-1">bolt</span>
+                            Multi-canale SMS/Email
+                        </div>
+                        <div class="flex items-center text-yellow-600">
+                            <span class="material-icons-outlined text-sm mr-1">add_circle</span>
+                            Log completo
+                        </div>
+                        <div class="flex items-center text-yellow-600">
+                            <span class="material-icons-outlined text-sm mr-1">add_circle</span>
+                            Configurabile
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
